@@ -1,13 +1,13 @@
 {
-  "name": "coffeemanager",
+  "name": "coffee-manager",
   "license": "UNLICENSED",
   "scripts": {
     "codegen": "graph codegen",
     "build": "graph build",
-    "deploy": "graph deploy --node https://api.studio.thegraph.com/deploy/ coffeemanager",
-    "create-local": "graph create --node http://localhost:8020/ coffeemanager",
-    "remove-local": "graph remove --node http://localhost:8020/ coffeemanager",
-    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 coffeemanager"
+    "deploy": "graph deploy --node https://api.studio.thegraph.com/deploy/ coffee-manager",
+    "create-local": "graph create --node http://localhost:8020/ coffee-manager",
+    "remove-local": "graph remove --node http://localhost:8020/ coffee-manager",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 coffee-manager"
   },
   "dependencies": {
     "@graphprotocol/graph-cli": "0.31.0",
