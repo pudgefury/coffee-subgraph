@@ -1,0 +1,5 @@
+type Coffee @entity {
+  id: ID!
+  addr: Bytes
+  amount: BigInt
+}

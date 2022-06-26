@@ -1,0 +1,23 @@
+specVersion: 0.0.4
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum
+    name: CoffeeManager
+    network: rinkeby
+    source:
+      address: "0x1198a5A605aA9e330C0e5abaEeB947E302d4ADB0"
+      abi: CoffeeManager
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      entities:
+        - Coffee
+      abis:
+        - name: CoffeeManager
+          file: ./abis/CoffeeManager.json
+      eventHandlers:
+        - event: CoffeeChanged(uint256,address,uint256)
+          handler: handleCoffeeChanged
+      file: ./src/mapping.ts
